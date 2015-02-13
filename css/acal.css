@@ -1,0 +1,9 @@
+body.acal {
+    /* TODO find better way to override twitter bootstrap background color and remove important */
+    background-color: #eee;
+}
+
+
+.acal .container {
+    font-family: "AtlasTypewriterRegular", "Andale Mono", "Consolas", "Lucida Console", "Menlo", "Luxi Mono", monospace;
+}

@@ -82,6 +82,16 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.contactUsContent {
+    text-align: right;
+    position: absolute;
+    left: 45%;
+    top: 65%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
 /* style the groups */
 #home {
     z-index: 5; /* slide over group 2 */
@@ -91,11 +101,11 @@ body {
     background: #C8C8C8;
 }
 
-#group2 {
+#about-us {
     z-index: 3; /* slide under groups 1 and 3 */
 }
 
-#group2 .parallax__layer--back {
+#about-us .parallax__layer--back {
     background: #544D97;
 }
 
@@ -131,22 +141,42 @@ body {
     background: rgb(245, 235, 100);
 }
 
-#group7 {
+#contact-us {
     z-index: 3; /* slide over group 7 */
 }
 
-#group7 .parallax__layer--base {
+#contact-us .parallax__layer--base {
     background: rgb(255, 241, 100);
 }
 
-/* misc
---------------------------------------------- */
+.menu {
+    position: absolute;
+    z-index: 100;
+    top: 0vh;
+    bottom: auto;
+    text-align: right;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+}
+.menu a {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: -5px;
+    border-left: 1px solid rgba(0,0,0,0.05);
+}
+
 .footer {
     position: absolute;
     z-index: 100;
-    bottom: 1vh;
+    bottom: 0vh;
     top: auto;
-    font-size: 80%;
     text-align: center;
     width: 100%;
+    padding-bottom: 5px;
+    background-color: white;
+}
+
+address {
+    display: inline;
 }

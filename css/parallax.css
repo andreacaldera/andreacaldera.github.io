@@ -82,14 +82,21 @@ body {
 
 #home .parallax__layer--base {
     position: absolute;
-    height: 100%;
-    width: 100%;
     background: url(../image/owl.jpg) no-repeat;
     background-position: center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 100% 100%;
+    background-size: contain;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
 }
 
 
@@ -118,7 +125,7 @@ body {
 }
 
 #about-us .parallax__layer--back {
-    background: #B8944D;
+    background: #855F43;
 }
 
 #group3 {
@@ -158,7 +165,7 @@ body {
 }
 
 #contact-us .parallax__layer--base {
-    background: #5C5C3D;
+    background: #B19942;
 }
 
 .menu {

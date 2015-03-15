@@ -74,13 +74,24 @@ body {
 
 /* centre the content in the parallax layers */
 .title {
+    padding-top: 20px;
     text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    color: #ffffff;
 }
+
+#home .parallax__layer--base {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(./image/owl.jpg) no-repeat;
+    background-position: center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+}
+
 
 .contactUsContent {
     text-align: right;
@@ -90,6 +101,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
+    color: #ffffff;
 }
 
 /* style the groups */
@@ -98,7 +110,7 @@ body {
 }
 
 #home .parallax__layer--base {
-    background: #C8C8C8;
+    background-color: #000000;
 }
 
 #about-us {
@@ -106,7 +118,7 @@ body {
 }
 
 #about-us .parallax__layer--back {
-    background: #544D97;
+    background: #B8944D;
 }
 
 #group3 {
@@ -146,7 +158,7 @@ body {
 }
 
 #contact-us .parallax__layer--base {
-    background: rgb(255, 241, 100);
+    background: #5C5C3D;
 }
 
 .menu {
@@ -174,6 +186,7 @@ body {
     text-align: center;
     width: 100%;
     padding-bottom: 5px;
+    padding-top: 5px;
     background-color: white;
 }
 

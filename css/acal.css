@@ -3,16 +3,9 @@ body.acal {
     background-color: #eee;
 }
 
-.acal .container-fluid {
-    font-family: "AtlasTypewriterRegular", "Andale Mono", "Consolas", "Lucida Console", "Menlo", "Luxi Mono", monospace;
-    height: 100%;
-    width: 100%;
-}
-
 .acal h1 {
 	color: 000099;
 }
-
 .footer {
     width: 100%;
 	position : absolute;

@@ -1,6 +1,9 @@
-/* Thanks for http://keithclark.co.uk/ for his tutorial on CSS based Parallax design
+.acal {
+    font-family: Century Gothic, sans-serif !important;
+}
 
-/* Parallax base styles */
+/* Thanks for http://keithclark.co.uk/ for his tutorial on CSS based Parallax design
+   Parallax base styles */
 .parallax {
     height: 500px; /* fallback for older browsers */
     height: 100vh;
@@ -77,17 +80,11 @@ body {
     padding-top: 20px;
     text-align: center;
     margin-top: 40px;
-    color: #ffffff;
+    color: grey;
 }
 
 #home .parallax__layer--base {
     position: absolute;
-    background: url(../image/owl.jpg) no-repeat;
-    background-position: center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: contain;
     max-width: 100%;
     max-height: 100%;
     bottom: 0;
@@ -97,7 +94,6 @@ body {
     top: 0;
 }
 
-
 .contactUsContent {
     text-align: right;
     position: absolute;
@@ -106,7 +102,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
-    color: #ffffff;
+    color: white;
 }
 
 /* style the groups */
@@ -115,15 +111,19 @@ body {
 }
 
 #home .parallax__layer--base {
-    background-color: #000000;
+    background-color: white;
 }
 
 #about-us {
     z-index: 3; /* slide under groups 1 and 3 */
 }
 
+#about-us .title {
+    color: white
+}
+
 #about-us .parallax__layer--back {
-    background: #855F43;
+    background: lightslategrey;
 }
 
 #group3 {
@@ -162,8 +162,12 @@ body {
     z-index: 3; /* slide over group 7 */
 }
 
+#contact-us .title {
+    color: #ffffff;
+}
+
 #contact-us .parallax__layer--base {
-    background: #B19942;
+    background: darkgrey;
 }
 
 .menu {
@@ -173,14 +177,16 @@ body {
     bottom: auto;
     text-align: right;
     padding: 10px;
-    background-color: white;
+    background: grey;
+    right: 15px;
     width: 100%;
 }
+
 .menu a {
     padding-left: 20px;
     padding-right: 20px;
-    margin-right: -5px;
-    border-left: 1px solid rgba(0,0,0,0.05);
+    color: white;
+    border-left: 1px solid white;
 }
 
 .footer {
